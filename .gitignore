@@ -1,0 +1,21 @@
+# Build e dependências
+/build/
+/out/
+
+# IDEs
+.idea/
+*.iml
+.project
+.classpath
+.settings/
+.vscode/
+
+# Logs e temporários
+*.log
+*.tmp
+*.bak
+*.swp
+
+# Arquivos de ambiente
+.env
+*.local
