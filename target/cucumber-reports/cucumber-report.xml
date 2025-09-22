@@ -1,95 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Cucumber" time="18.053" tests="2" skipped="0" failures="2" errors="0">
-<testcase classname="Dashboard" name="Acesso ao dashboard principal" time="10.209">
-<failure type="org.openqa.selenium.ElementNotInteractableException" message="element not interactable
-  (Session info: chrome=140.0.7339.129)
-Build info: version: '4.10.0', revision: 'c14d967899'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_461'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [7fa6fe88b136661c6409befbc40f10e2, clickElement {id=f.F2CC35AC6C5964D082EB6992C1C28E55.d.46E1D5468D324E4D30538E4FE0C94E82.e.29}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 140.0.7339.129, chrome: {chromedriverVersion: 139.0.7258.154 (9e0d6b2b47f..., userDataDir: C:\Users\KSSYA~1\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64503}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64503/devtoo..., se:cdpVersion: 140.0.7339.129, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (7fa6fe88b136661c6409befbc40f10e2)] -&gt; xpath: //*[@id=&quot;app&quot;]/div[1]/div[1]/aside/nav/div[2]/ul/li[8]/a]
-Session ID: 7fa6fe88b136661c6409befbc40f10e2">
-<![CDATA[org.openqa.selenium.ElementNotInteractableException: element not interactable
-  (Session info: chrome=140.0.7339.129)
-Build info: version: '4.10.0', revision: 'c14d967899'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_461'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [7fa6fe88b136661c6409befbc40f10e2, clickElement {id=f.F2CC35AC6C5964D082EB6992C1C28E55.d.46E1D5468D324E4D30538E4FE0C94E82.e.29}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 140.0.7339.129, chrome: {chromedriverVersion: 139.0.7258.154 (9e0d6b2b47f..., userDataDir: C:\Users\KSSYA~1\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64503}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64503/devtoo..., se:cdpVersion: 140.0.7339.129, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (7fa6fe88b136661c6409befbc40f10e2)] -> xpath: //*[@id="app"]/div[1]/div[1]/aside/nav/div[2]/ul/li[8]/a]
-Session ID: 7fa6fe88b136661c6409befbc40f10e2
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:199)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:132)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:242)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
-	at br.com.cotiinformatica.steps.DashboardSteps.eu_estou_na_página_do_dashboard(DashboardSteps.java:94)
-	at ✽.eu estou na página do dashboard(file:///C:/Users/Késsya/Desktop/Projetos/Workspace%20-%20Java/exercicioAutomacao02/src/test/java/br/com/cotiinformatica/features/Dashboard.feature:16)
-]]>
-</failure>
+<testsuite name="Cucumber" time="25.77" tests="2" skipped="0" failures="1" errors="0">
+<testcase classname="Dashboard" name="Acesso ao dashboard principal" time="17.07">
 <system-out><![CDATA[
 Dado eu estou na página de login do sistema.................................passed
 E eu informo o nome de usuário "Admin"......................................passed
 E eu informo a senha "admin123".............................................passed
 Quando eu solicito o acesso ao sistema......................................passed
 Então eu sou autenticado com sucesso........................................passed
-Dado eu estou na página do dashboard........................................failed
-Então o sistema exibe os indicadores principais da aplicação................skipped
+Dado eu estou na página do dashboard........................................passed
+Então o sistema exibe os indicadores principais da aplicação................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Dashboard" name="Visualizar ações pendentes no dashboard" time="7.084">
-<failure type="org.openqa.selenium.ElementNotInteractableException" message="element not interactable
-  (Session info: chrome=140.0.7339.129)
-Build info: version: '4.10.0', revision: 'c14d967899'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_461'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [82173422a96bac5e4ec2b17eec88b5fc, clickElement {id=f.0F796743BC87630BCD29197581C41B8E.d.9D17268C060323B82A2698698D01F691.e.24}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 140.0.7339.129, chrome: {chromedriverVersion: 139.0.7258.154 (9e0d6b2b47f..., userDataDir: C:\Users\KSSYA~1\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64532}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64532/devtoo..., se:cdpVersion: 140.0.7339.129, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (82173422a96bac5e4ec2b17eec88b5fc)] -&gt; xpath: //*[@id=&quot;app&quot;]/div[1]/div[1]/aside/nav/div[2]/ul/li[8]/a]
-Session ID: 82173422a96bac5e4ec2b17eec88b5fc">
-<![CDATA[org.openqa.selenium.ElementNotInteractableException: element not interactable
-  (Session info: chrome=140.0.7339.129)
-Build info: version: '4.10.0', revision: 'c14d967899'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_461'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [82173422a96bac5e4ec2b17eec88b5fc, clickElement {id=f.0F796743BC87630BCD29197581C41B8E.d.9D17268C060323B82A2698698D01F691.e.24}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 140.0.7339.129, chrome: {chromedriverVersion: 139.0.7258.154 (9e0d6b2b47f..., userDataDir: C:\Users\KSSYA~1\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64532}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64532/devtoo..., se:cdpVersion: 140.0.7339.129, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (82173422a96bac5e4ec2b17eec88b5fc)] -> xpath: //*[@id="app"]/div[1]/div[1]/aside/nav/div[2]/ul/li[8]/a]
-Session ID: 82173422a96bac5e4ec2b17eec88b5fc
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:199)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:132)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:242)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
-	at br.com.cotiinformatica.steps.DashboardSteps.eu_estou_na_página_do_dashboard(DashboardSteps.java:94)
-	at ✽.eu estou na página do dashboard(file:///C:/Users/Késsya/Desktop/Projetos/Workspace%20-%20Java/exercicioAutomacao02/src/test/java/br/com/cotiinformatica/features/Dashboard.feature:20)
-]]>
-</failure>
+<testcase classname="Dashboard" name="Visualizar ações pendentes no dashboard" time="8.233">
+<failure/>
 <system-out><![CDATA[
 Dado eu estou na página de login do sistema.................................passed
 E eu informo o nome de usuário "Admin"......................................passed
 E eu informo a senha "admin123".............................................passed
 Quando eu solicito o acesso ao sistema......................................passed
 Então eu sou autenticado com sucesso........................................passed
-Dado eu estou na página do dashboard........................................failed
-Quando eu acesso a opção de visualizar ações pendentes......................skipped
+Dado eu estou na página do dashboard........................................passed
+Quando eu acesso a opção de visualizar ações pendentes......................undefined
 Então o sistema exibe uma lista das ações...................................skipped
 ]]></system-out>
 </testcase>

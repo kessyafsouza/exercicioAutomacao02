@@ -86,12 +86,10 @@ public class DashboardSteps {
 	@Dado("eu estou na página do dashboard")
 	public void eu_estou_na_página_do_dashboard() {
 
-		// Capturar o link da página no menu do sistema
-		WebElement element = wait.until(ExpectedConditions
-				.presenceOfElementLocated(By.xpath("//*[@id=\"app\"]/div[1]/div[1]/aside/nav/div[2]/ul/li[8]/a")));
+		driver.navigate().to("https://opensource-demo.orangehrmlive.com/web/index.php/dashboard/index");
+		String urlAtual = driver.getCurrentUrl();
+		assertEquals("https://opensource-demo.orangehrmlive.com/web/index.php/dashboard/index", urlAtual);
 
-		// Clicar no link
-		element.click();
 	}
 
 	@Então("o sistema exibe os indicadores principais da aplicação")
